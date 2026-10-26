@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Exemplo de site para academia — Demonstração | OrcasDesk</title>
+  <meta name="description" content="Demonstração interativa de site para academia ou personal trainer, criada pela OrcasDesk. Energia em cada seção: modalidades, grade de horários por dia, planos e aula experimental. Empresa fictícia.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.orcasdesk.com.br/demos/academia.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.orcasdesk.com.br/demos/academia.html">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="OrcasDesk">
+  <meta property="og:title" content="Exemplo de site para academia — Demonstração | OrcasDesk">
+  <meta property="og:description" content="Demonstração interativa de site para academia ou personal trainer, criada pela OrcasDesk. Energia em cada seção: modalidades, grade de horários por dia, planos e aula experimental. Empresa fictícia.">
+  <meta property="og:url" content="https://www.orcasdesk.com.br/demos/academia.html">
+  <meta property="og:image" content="https://www.orcasdesk.com.br/assets/img/demos/academia-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.orcasdesk.com.br/assets/img/demos/academia-og.jpg">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/demo-kit.css">
+  <style>
+
+:root{--bg:#0a0a0a;--card:#141414;--lime:#c6ff3d;--ink:#f3f3f0;--muted:#9a9a93;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Inter",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}h1,h2,h3{font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.95;margin:0 0 .35em;letter-spacing:.01em}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.top{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:"Anton";font-size:1.5rem;font-style:italic;letter-spacing:.02em}.logo b{color:var(--lime);font-weight:400}
+.menu{display:flex;gap:26px;font-weight:600;font-size:.88rem;text-transform:uppercase;letter-spacing:.06em}.menu a:hover{color:var(--lime)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:6px;background:var(--lime);color:#0a0a0a;font:800 .9rem "Inter";text-transform:uppercase;letter-spacing:.04em;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px) skew(-4deg);box-shadow:0 10px 30px -8px var(--lime)}.btn.dark{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--line)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:8px 12px;font:inherit}
+.hero{position:relative;padding:80px 0 0;overflow:hidden}
+.hero h1{font-size:clamp(4rem,13vw,10.5rem);font-style:italic}.hero h1 span{color:var(--lime)}
+.hero .row{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:60px}
+.hero p{max-width:420px;color:var(--muted);font-size:1.1rem;margin:0 0 24px}
+.bars{display:flex;align-items:end;gap:6px;height:120px}.bars i{width:14px;background:var(--lime);border-radius:3px;animation:eq 1.2s ease-in-out infinite alternate}
+.bars i:nth-child(2n){animation-delay:.2s;opacity:.7}.bars i:nth-child(3n){animation-delay:.45s}.bars i:nth-child(5n){animation-delay:.7s;opacity:.5}
+@keyframes eq{from{height:20%}to{height:100%}}
+.marquee{border-block:1px solid var(--line);background:var(--lime);color:#0a0a0a;overflow:hidden;white-space:nowrap;transform:rotate(-1.5deg);margin:0 -20px}
+.marquee div{display:inline-block;padding:16px 0;font:1.8rem "Anton";text-transform:uppercase;animation:mq 22s linear infinite}
+.marquee span{margin:0 26px}@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:110px 0}h2{font-size:clamp(3rem,7vw,5.4rem)}
+.mods{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.mod{background:var(--card);border-radius:14px;padding:26px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:transform .3s}
+.mod::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;border:16px solid rgba(198,255,61,.12);transition:transform .5s}
+.mod:hover{transform:translateY(-6px)}.mod:hover::after{transform:scale(1.4)}
+.mod h3{font-size:2rem}.mod p{color:var(--muted);margin:0;font-size:.93rem}.mod .n{color:var(--lime);font:1rem "Anton"}
+.tabs{display:flex;gap:6px;margin-bottom:24px;overflow-x:auto;padding-bottom:4px}
+.tabs button{background:var(--card);border:0;color:var(--muted);padding:12px 20px;border-radius:8px;font:700 .9rem "Inter";cursor:pointer;text-transform:uppercase;flex:none}
+.tabs button[aria-selected=true]{background:var(--lime);color:#0a0a0a}
+.sched{display:grid;gap:8px}.cls{display:grid;grid-template-columns:110px 1fr auto;gap:20px;align-items:center;padding:18px 22px;background:var(--card);border-radius:10px}
+.cls time{font:1.5rem "Anton";color:var(--lime)}.cls b{font-weight:700}.cls span{color:var(--muted);font-size:.9rem}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.plan{border:1px solid var(--line);border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px}
+.plan.hot{background:var(--lime);color:#0a0a0a;border-color:var(--lime)}.plan.hot p,.plan.hot li{color:#25300b}
+.plan .pr{font:3rem "Anton"}.plan .pr small{font:600 .9rem "Inter"}.plan ul{padding:0;margin:0 0 10px;list-style:none;display:grid;gap:8px;color:var(--muted)}
+.plan.hot .btn{background:#0a0a0a;color:var(--lime)}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:900px){.menu{position:fixed;inset:70px 0 auto;flex-direction:column;background:var(--bg);padding:24px;display:none}.menu.open{display:flex}.burger{display:block}.top .btn{display:none}
+.mods{grid-template-columns:1fr 1fr}.plans{grid-template-columns:1fr}.bars{display:none}.cls{grid-template-columns:80px 1fr}.cls .btn{grid-column:1/-1}}
+@media(max-width:520px){.mods{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.orcasdesk.com.br/demos/academia.html#webpage","url":"https://www.orcasdesk.com.br/demos/academia.html","name":"Exemplo de site para academia — Demonstração | OrcasDesk","description":"Demonstração interativa de site para academia ou personal trainer, criada pela OrcasDesk. Energia em cada seção: modalidades, grade de horários por dia, planos e aula experimental. Empresa fictícia.","inLanguage":"pt-BR","isPartOf":{"@id":"https://www.orcasdesk.com.br/#website"},"publisher":{"@id":"https://www.orcasdesk.com.br/#organizacao"},"primaryImageOfPage":"https://www.orcasdesk.com.br/assets/img/demos/academia-og.jpg","about":{"@type":"Thing","name":"Criação de site para academia ou personal trainer"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.orcasdesk.com.br/"},{"@type":"ListItem","position":2,"name":"Demonstrações","item":"https://www.orcasdesk.com.br/demonstracoes.html"},{"@type":"ListItem","position":3,"name":"Academia","item":"https://www.orcasdesk.com.br/demos/academia.html"}]},{"@type":"WebSite","@id":"https://www.orcasdesk.com.br/#website","url":"https://www.orcasdesk.com.br/","name":"OrcasDesk"},{"@type":"Organization","@id":"https://www.orcasdesk.com.br/#organizacao","name":"OrcasDesk","url":"https://www.orcasdesk.com.br/","email":"orcasdesk@gmail.com"}]}</script>
+</head>
+<body class="od-demo" data-wa="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20academia%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio.">
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#">Pulso<b>Fit</b></a>
+  <nav class="menu" id="m" aria-label="Menu"><a href="#modalidades">Modalidades</a><a href="#horarios">Horários</a><a href="#planos">Planos</a></nav>
+  <button class="btn" data-demo-action="agendaria uma aula experimental pelo WhatsApp">Aula grátis</button>
+  <button class="burger" data-menu-btn="#m" aria-expanded="false" aria-controls="m">Menu</button>
+</div></header>
+<main>
+<section class="hero" style="padding-bottom:0"><div class="wrap">
+  <h1 data-reveal>Seu treino.<br><span>Seu ritmo.</span></h1>
+  <div class="row"><div data-reveal style="--d:.15s"><p>Estrutura moderna, professores presentes e aulas que fazem você querer voltar amanhã.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap"><button class="btn" data-demo-action="agendaria uma aula experimental pelo WhatsApp">Agendar aula experimental</button><a class="btn dark" href="#planos">Ver planos</a></div></div>
+    <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+</div>
+<div class="marquee" aria-hidden="true"><div><span>Musculação</span>✦<span>Funcional</span>✦<span>Bike indoor</span>✦<span>Personal</span>✦<span>Mobilidade</span>✦<span>Musculação</span>✦<span>Funcional</span>✦<span>Bike indoor</span>✦<span>Personal</span>✦<span>Mobilidade</span>✦<span>Musculação</span>✦<span>Funcional</span>✦<span>Bike indoor</span>✦<span>Personal</span>✦<span>Mobilidade</span>✦<span>Musculação</span>✦<span>Funcional</span>✦<span>Bike indoor</span>✦<span>Personal</span>✦<span>Mobilidade</span>✦<span>Musculação</span>✦<span>Funcional</span>✦<span>Bike indoor</span>✦<span>Personal</span>✦<span>Mobilidade</span>✦<span>Musculação</span>✦<span>Funcional</span>✦<span>Bike indoor</span>✦<span>Personal</span>✦<span>Mobilidade</span>✦</div></div></section>
+<section id="modalidades"><div class="wrap"><h2 data-reveal>Modalidades</h2><div class="mods"><article class="mod" data-reveal style="--d:0.00s"><span class="n">01</span><div><h3>Musculação</h3><p>Área completa com acompanhamento de professores.</p></div></article><article class="mod" data-reveal style="--d:0.06s"><span class="n">02</span><div><h3>Funcional</h3><p>Treinos em grupo, intensos e dinâmicos.</p></div></article><article class="mod" data-reveal style="--d:0.12s"><span class="n">03</span><div><h3>Bike indoor</h3><p>Aulas guiadas com música e muita energia.</p></div></article><article class="mod" data-reveal style="--d:0.18s"><span class="n">04</span><div><h3>Personal</h3><p>Treino individual com plano sob medida.</p></div></article></div></div></section>
+<section id="horarios" style="padding-top:0"><div class="wrap"><h2 data-reveal>Grade da semana</h2>
+  <div class="tabs" role="tablist" aria-label="Dias da semana" data-tabs><button role="tab" id="d0" aria-controls="s0" aria-selected="true" tabindex="0">Seg</button><button role="tab" id="d1" aria-controls="s1" aria-selected="false" tabindex="-1">Ter</button><button role="tab" id="d2" aria-controls="s2" aria-selected="false" tabindex="-1">Qua</button><button role="tab" id="d3" aria-controls="s3" aria-selected="false" tabindex="-1">Qui</button><button role="tab" id="d4" aria-controls="s4" aria-selected="false" tabindex="-1">Sex</button><button role="tab" id="d5" aria-controls="s5" aria-selected="false" tabindex="-1">Sáb</button></div><div class="sched" role="tabpanel" id="s0" aria-labelledby="d0"><div class="cls"><time>06:30</time><div><b>Funcional</b><br><span>Prof. Ana · 45 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div><div class="cls"><time>12:00</time><div><b>Bike indoor</b><br><span>Prof. Caio · 40 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div><div class="cls"><time>19:00</time><div><b>Funcional</b><br><span>Prof. Ana · 45 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div></div><div class="sched" role="tabpanel" id="s1" aria-labelledby="d1" hidden><div class="cls"><time>07:00</time><div><b>Bike indoor</b><br><span>Prof. Caio · 40 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div><div class="cls"><time>18:30</time><div><b>Mobilidade</b><br><span>Prof. Bia · 50 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div></div><div class="sched" role="tabpanel" id="s2" aria-labelledby="d2" hidden><div class="cls"><time>06:30</time><div><b>Funcional</b><br><span>Prof. Ana · 45 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div><div class="cls"><time>12:00</time><div><b>Abdômen</b><br><span>Prof. Bia · 30 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div><div class="cls"><time>19:00</time><div><b>Bike indoor</b><br><span>Prof. Caio · 40 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div></div><div class="sched" role="tabpanel" id="s3" aria-labelledby="d3" hidden><div class="cls"><time>07:00</time><div><b>Bike indoor</b><br><span>Prof. Caio · 40 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div><div class="cls"><time>18:30</time><div><b>Funcional</b><br><span>Prof. Ana · 45 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div></div><div class="sched" role="tabpanel" id="s4" aria-labelledby="d4" hidden><div class="cls"><time>06:30</time><div><b>Funcional</b><br><span>Prof. Ana · 45 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div><div class="cls"><time>18:00</time><div><b>Treino em dupla</b><br><span>Prof. Bia · 50 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div></div><div class="sched" role="tabpanel" id="s5" aria-labelledby="d5" hidden><div class="cls"><time>09:00</time><div><b>Aulão funcional</b><br><span>Equipe · 60 min</span></div><button class="btn dark" data-demo-action="reservaria a vaga na aula pelo WhatsApp da academia">Reservar</button></div></div></div></section>
+<section id="planos" style="padding-top:0"><div class="wrap"><h2 data-reveal>Planos</h2>
+  <div class="plans">
+    <div class="plan" data-reveal><h3 style="font-size:1.8rem">Mensal</h3><div class="pr">R$ 119<small>/mês</small></div><ul><li>Musculação livre</li><li>Avaliação inicial</li></ul><button class="btn dark" data-demo-action="abriria o WhatsApp para contratar o plano mensal">Quero este</button></div>
+    <div class="plan hot" data-reveal style="--d:.08s"><h3 style="font-size:1.8rem">Trimestral</h3><div class="pr">R$ 99<small>/mês</small></div><ul><li>Musculação + aulas</li><li>Reavaliação mensal</li></ul><button class="btn" data-demo-action="abriria o WhatsApp para contratar o plano trimestral">Quero este</button></div>
+    <div class="plan" data-reveal style="--d:.16s"><h3 style="font-size:1.8rem">Anual</h3><div class="pr">R$ 89<small>/mês</small></div><ul><li>Acesso completo</li><li>2 sessões com personal</li></ul><button class="btn dark" data-demo-action="abriria o WhatsApp para contratar o plano anual">Quero este</button></div>
+  </div><p style="color:var(--muted);font-size:.85rem;margin-top:16px">Valores ilustrativos desta demonstração.</p></div></section>
+</main>
+<footer><div class="wrap"><span>© Pulso Fit Studio — academia fictícia</span><span>Demonstração criada pela OrcasDesk</span></div></footer>
+<div class="od-bar" role="region" aria-label="Aviso de demonstração">
+  <span class="od-tag"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".55" stop-color="#3B82F6"/><stop offset="1" stop-color="#7C6CFF"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lgd)"/><path d="M11.5 27.5c3.6-.9 7.4-5.3 8.6-17.5 1.9 8.6 4.6 14.6 9.4 17.5z" fill="#fff"/><path d="M17.6 21.2c1.3.2 2.6-.4 3.3-1.6" stroke="#0B1324" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".55"/><path d="M7 31.2c4.3-2.6 8.7-2.6 13 0s8.7 2.6 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity=".75"/></svg><b>Demo</b><span class="od-hide-sm">Empresa fictícia · criada pela OrcasDesk</span></span>
+  <span class="od-sep od-hide-sm" aria-hidden="true"></span>
+  <a class="od-link" href="../demonstracoes.html">← Galeria</a>
+  <a class="od-cta" href="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20academia%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.48A11.3 11.3 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.72 1.46h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Quero um site assim</a>
+</div>
+<script src="../assets/js/demo-kit.js" defer></script>
+</body>
+</html>
