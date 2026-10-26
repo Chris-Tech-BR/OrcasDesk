@@ -1,0 +1,14 @@
+# Arquivos que NÃO devem ser publicados como parte do site
+node_modules
+.git
+.github
+.wrangler
+.gitignore
+.assetsignore
+wrangler.jsonc
+wrangler.toml
+package.json
+package-lock.json
+bun.lock
+bun.lockb
+README.md
