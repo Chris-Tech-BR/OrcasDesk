@@ -1,0 +1,29 @@
+{
+  "name": "OrcasDesk",
+  "short_name": "OrcasDesk",
+  "description": "Sites profissionais por assinatura mensal.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "lang": "pt-BR",
+  "background_color": "#050912",
+  "theme_color": "#050912",
+  "icons": [
+    {
+      "src": "assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
+
