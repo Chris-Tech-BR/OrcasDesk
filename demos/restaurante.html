@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Exemplo de site para restaurante — Demonstração | OrcasDesk</title>
+  <meta name="description" content="Demonstração interativa de site para restaurante, café ou lanchonete, criada pela OrcasDesk. Cardápio interativo por categorias, horários, ambiente e reservas direto pelo WhatsApp. Empresa fictícia.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.orcasdesk.com.br/demos/restaurante.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.orcasdesk.com.br/demos/restaurante.html">
+  <meta name="theme-color" content="#16100c">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="OrcasDesk">
+  <meta property="og:title" content="Exemplo de site para restaurante — Demonstração | OrcasDesk">
+  <meta property="og:description" content="Demonstração interativa de site para restaurante, café ou lanchonete, criada pela OrcasDesk. Cardápio interativo por categorias, horários, ambiente e reservas direto pelo WhatsApp. Empresa fictícia.">
+  <meta property="og:url" content="https://www.orcasdesk.com.br/demos/restaurante.html">
+  <meta property="og:image" content="https://www.orcasdesk.com.br/assets/img/demos/restaurante-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.orcasdesk.com.br/assets/img/demos/restaurante-og.jpg">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Work+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../assets/css/demo-kit.css">
+  <style>
+
+:root{--bg:#16100c;--bg2:#1f1712;--cream:#f4e9da;--muted:#bfae98;--ember:#e5622e;--olive:#9aa065;--line:rgba(244,233,218,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font:400 17px/1.7 "Work Sans",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}h1,h2,h3{font-family:"Fraunces",serif;font-weight:500;line-height:1.05;margin:0 0 .4em;letter-spacing:-.01em}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.top{position:sticky;top:0;z-index:20;background:rgba(22,16,12,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{font-family:"Fraunces",serif;font-size:1.45rem;font-style:italic}.logo span{color:var(--ember)}
+.menu{display:flex;gap:28px;font-size:.95rem;color:var(--muted)}.menu a:hover{color:var(--cream)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;background:var(--ember);color:#1a0d06;font-weight:600;border:0;cursor:pointer;font:inherit;font-weight:600;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px -10px var(--ember)}
+.btn.ghost{background:transparent;color:var(--cream);border:1px solid var(--line)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--cream);border-radius:10px;padding:8px 12px;font:inherit}
+.hero{position:relative;padding:90px 0 110px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.kicker{font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--olive);margin-bottom:18px}
+.hero h1{font-size:clamp(3rem,7vw,5.6rem)}.hero h1 em{color:var(--ember)}
+.hero p{color:var(--muted);max-width:480px;font-size:1.1rem;margin:0 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.plate{position:relative;aspect-ratio:1;max-width:460px;margin:auto;width:100%}
+.plate svg{width:100%;height:100%;animation:turn 60s linear infinite}
+@keyframes turn{to{transform:rotate(360deg)}}
+.glow{position:absolute;inset:15%;background:radial-gradient(circle,rgba(229,98,46,.45),transparent 65%);filter:blur(40px);animation:pulse 4s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.6;transform:scale(1.08)}}
+.steam{position:absolute;top:-6%;left:50%;width:60px;height:120px;transform:translateX(-50%)}
+.steam i{position:absolute;bottom:0;width:6px;height:60px;border-radius:6px;background:linear-gradient(transparent,rgba(244,233,218,.35));animation:rise 3s ease-in infinite;opacity:0}
+.steam i:nth-child(1){left:10px}.steam i:nth-child(2){left:28px;animation-delay:1s}.steam i:nth-child(3){left:46px;animation-delay:2s}
+@keyframes rise{0%{opacity:0;transform:translateY(20px) scaleY(.6)}40%{opacity:1}100%{opacity:0;transform:translateY(-50px) scaleY(1.2)}}
+.strip{border-block:1px solid var(--line);background:var(--bg2)}
+.strip .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:26px 24px;font-size:.95rem;color:var(--muted)}
+.strip b{display:block;color:var(--cream);font-family:"Fraunces",serif;font-size:1.15rem;font-weight:500}
+section{padding:100px 0}.head{text-align:center;max-width:640px;margin:0 auto 46px}.head p{color:var(--muted)}
+h2{font-size:clamp(2.2rem,5vw,3.6rem)}
+.tabs{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin-bottom:40px}
+.tabs button{background:none;border:1px solid var(--line);color:var(--muted);padding:10px 20px;border-radius:999px;font:inherit;cursor:pointer;transition:.25s}
+.tabs button[aria-selected=true]{background:var(--cream);color:var(--bg);border-color:var(--cream)}
+.dishes{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px;max-width:960px;margin:0 auto}
+.dish{display:grid;grid-template-columns:1fr auto;gap:4px 16px;padding:22px 0;border-bottom:1px dashed var(--line)}
+.dish h3{font-size:1.3rem;margin:0}.dish p{grid-column:1/-1;margin:0;color:var(--muted);font-size:.95rem}
+.dish .price{font-family:"Fraunces",serif;color:var(--ember);font-size:1.2rem}
+.tag{font:600 .68rem "Work Sans";letter-spacing:.1em;text-transform:uppercase;color:var(--olive);border:1px solid currentColor;border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:middle}
+.amb{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
+.amb figure{margin:0;border-radius:20px;min-height:340px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:24px}
+.amb figure::before{content:"";position:absolute;inset:0;transition:transform 1.2s}
+.amb figure:hover::before{transform:scale(1.06)}
+.amb figcaption{position:relative;font-family:"Fraunces",serif;font-size:1.4rem}
+.amb .a1::before{background:radial-gradient(circle at 30% 30%,#f2a35c 0 6%,transparent 7%),radial-gradient(circle at 60% 25%,#f2a35c 0 4%,transparent 5%),radial-gradient(circle at 80% 35%,#f2a35c 0 5%,transparent 6%),linear-gradient(160deg,#5a3320,#24150d 70%)}
+.amb .a2::before{background:repeating-linear-gradient(90deg,#3b2a1c 0 22px,#33241a 22px 44px),linear-gradient(#2a1d14,#2a1d14)}
+.amb .a3::before{background:radial-gradient(circle at 50% 120%,#e5622e,#7a2c13 45%,#1f130d 75%)}
+.res{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;background:var(--bg2);border:1px solid var(--line);border-radius:28px;padding:56px}
+.hours{list-style:none;padding:0;margin:0}.hours li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted)}.hours b{color:var(--cream);font-weight:500}
+footer{padding:50px 0 30px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:860px){.menu{position:fixed;inset:72px 0 auto;flex-direction:column;background:var(--bg);padding:24px;gap:18px;display:none;border-bottom:1px solid var(--line)}.menu.open{display:flex}.burger{display:block}.top .btn{display:none}
+.hero .wrap,.res{grid-template-columns:1fr}.plate{max-width:320px}.dishes{grid-template-columns:1fr}.amb{grid-template-columns:1fr}.amb figure{min-height:200px}.strip .wrap{grid-template-columns:1fr}.res{padding:30px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.orcasdesk.com.br/demos/restaurante.html#webpage","url":"https://www.orcasdesk.com.br/demos/restaurante.html","name":"Exemplo de site para restaurante — Demonstração | OrcasDesk","description":"Demonstração interativa de site para restaurante, café ou lanchonete, criada pela OrcasDesk. Cardápio interativo por categorias, horários, ambiente e reservas direto pelo WhatsApp. Empresa fictícia.","inLanguage":"pt-BR","isPartOf":{"@id":"https://www.orcasdesk.com.br/#website"},"publisher":{"@id":"https://www.orcasdesk.com.br/#organizacao"},"primaryImageOfPage":"https://www.orcasdesk.com.br/assets/img/demos/restaurante-og.jpg","about":{"@type":"Thing","name":"Criação de site para restaurante, café ou lanchonete"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.orcasdesk.com.br/"},{"@type":"ListItem","position":2,"name":"Demonstrações","item":"https://www.orcasdesk.com.br/demonstracoes.html"},{"@type":"ListItem","position":3,"name":"Restaurante","item":"https://www.orcasdesk.com.br/demos/restaurante.html"}]},{"@type":"WebSite","@id":"https://www.orcasdesk.com.br/#website","url":"https://www.orcasdesk.com.br/","name":"OrcasDesk"},{"@type":"Organization","@id":"https://www.orcasdesk.com.br/#organizacao","name":"OrcasDesk","url":"https://www.orcasdesk.com.br/","email":"orcasdesk@gmail.com"}]}</script>
+</head>
+<body class="od-demo" data-wa="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20restaurante%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio.">
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#">Brasa <span>&amp;</span> Alecrim</a>
+  <nav class="menu" id="m" aria-label="Menu"><a href="#cardapio">Cardápio</a><a href="#ambiente">Ambiente</a><a href="#reservas">Reservas</a><a href="#contato">Contato</a></nav>
+  <a class="btn" href="#reservas">Reservar mesa</a>
+  <button class="burger" data-menu-btn="#m" aria-expanded="false" aria-controls="m">Menu</button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+  <div data-reveal>
+    <div class="kicker">Cozinha de fogo · Centro</div>
+    <h1>Sabores de casa, <em>feitos na brasa.</em></h1>
+    <p>Ingredientes da estação, fogo de lenha e uma mesa sem pressa. Almoço e jantar de terça a domingo.</p>
+    <div class="actions"><a class="btn" href="#reservas">Reservar mesa</a><a class="btn ghost" href="#cardapio">Ver cardápio</a></div>
+  </div>
+  <div class="plate" data-reveal style="--d:.15s" aria-hidden="true">
+    <div class="glow"></div><div class="steam"><i></i><i></i><i></i></div>
+    <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="96" fill="#efe3d1"/><circle cx="100" cy="100" r="78" fill="#f8efe2" stroke="#e2d3bd" stroke-width="2"/>
+      <ellipse cx="88" cy="96" rx="40" ry="28" fill="#6b2f17" transform="rotate(-18 88 96)"/><g stroke="#3e1a0b" stroke-width="4" stroke-linecap="round" opacity=".7"><path d="M62 92l40-22M66 106l40-22M72 119l36-20"/></g>
+      <circle cx="132" cy="120" r="14" fill="#d9a441"/><circle cx="140" cy="100" r="11" fill="#e2b453"/><circle cx="124" cy="138" r="10" fill="#cf9634"/>
+      <path d="M118 66c10-8 24-6 30 4-10 2-20 6-30-4z" fill="#6f8a3a"/><path d="M128 60c6 2 12 8 14 14" stroke="#4f6a24" stroke-width="2" fill="none"/>
+      <circle cx="70" cy="132" r="4" fill="#c8402a"/><circle cx="80" cy="138" r="3" fill="#c8402a"/><circle cx="64" cy="122" r="3" fill="#7d9a3c"/></svg>
+  </div>
+</div></section>
+<div class="strip"><div class="wrap">
+  <div><b>Ter a Sex</b>11h30–15h · 19h–23h</div><div><b>Sáb e Dom</b>12h–16h · 19h–23h30</div><div><b>Rua das Laranjeiras, 120</b>Endereço fictício para demonstração</div>
+</div></div>
+<section id="cardapio"><div class="wrap">
+  <div class="head" data-reveal><div class="kicker">Cardápio</div><h2>Do fogo para a mesa</h2><p>Pratos que mudam com a estação. Escolha uma categoria.</p></div>
+  <div class="tabs" role="tablist" aria-label="Categorias do cardápio" data-tabs><button role="tab" id="t-0" aria-controls="p-0" aria-selected="true" tabindex="0">Entradas</button><button role="tab" id="t-1" aria-controls="p-1" aria-selected="false" tabindex="-1">Principais</button><button role="tab" id="t-2" aria-controls="p-2" aria-selected="false" tabindex="-1">Sobremesas</button><button role="tab" id="t-3" aria-controls="p-3" aria-selected="false" tabindex="-1">Bebidas</button></div>
+  <div class="dishes" role="tabpanel" id="p-0" aria-labelledby="t-0"><div class="dish"><h3>Pão de fermentação natural<span class="tag">Vegetariano</span></h3><span class="price">R$ 24</span><p>Manteiga de ervas, flor de sal e azeite da casa.</p></div><div class="dish"><h3>Provoleta na brasa</h3><span class="price">R$ 39</span><p>Mel de laranjeira, alecrim e castanhas tostadas.</p></div><div class="dish"><h3>Bolinho de costela</h3><span class="price">R$ 36</span><p>Costela desfiada, maionese defumada e picles de cebola.</p></div><div class="dish"><h3>Salada de folhas do quintal<span class="tag">Vegetariano</span></h3><span class="price">R$ 32</span><p>Folhas, figo, queijo de cabra e vinagrete de mostarda.</p></div></div><div class="dishes" role="tabpanel" id="p-1" aria-labelledby="t-1" hidden><div class="dish"><h3>Ancho na brasa</h3><span class="price">R$ 98</span><p>300 g, farofa de alho, vinagrete e batatas rústicas.</p></div><div class="dish"><h3>Galeto ao alecrim</h3><span class="price">R$ 72</span><p>Marinado por 24 h, polenta cremosa e limão-siciliano.</p></div><div class="dish"><h3>Risoto de abóbora<span class="tag">Vegetariano</span></h3><span class="price">R$ 64</span><p>Abóbora assada, sálvia crocante e parmesão.</p></div><div class="dish"><h3>Peixe do dia</h3><span class="price">R$ 86</span><p>Grelhado no fogo, purê de mandioquinha e manteiga de ervas.</p></div></div><div class="dishes" role="tabpanel" id="p-2" aria-labelledby="t-2" hidden><div class="dish"><h3>Pudim de doce de leite</h3><span class="price">R$ 26</span><p>Calda de caramelo salgado.</p></div><div class="dish"><h3>Banana na brasa</h3><span class="price">R$ 28</span><p>Sorvete de canela e farofa doce.</p></div><div class="dish"><h3>Torta de chocolate</h3><span class="price">R$ 30</span><p>Chocolate 70%, flor de sal e creme azedo.</p></div></div><div class="dishes" role="tabpanel" id="p-3" aria-labelledby="t-3" hidden><div class="dish"><h3>Limonada de alecrim</h3><span class="price">R$ 14</span><p>Limão, alecrim e água com gás.</p></div><div class="dish"><h3>Chá gelado da casa</h3><span class="price">R$ 12</span><p>Hibisco, maçã e canela.</p></div><div class="dish"><h3>Carta de vinhos</h3><span class="price">Consulte</span><p>Rótulos nacionais e importados, taça ou garrafa.</p></div></div>
+</div></section>
+<section id="ambiente" style="padding-top:0"><div class="wrap">
+  <div class="head" data-reveal><div class="kicker">Ambiente</div><h2>Feito para ficar</h2></div>
+  <div class="amb">
+    <figure class="a1" data-reveal><figcaption>Salão principal com 60 lugares</figcaption></figure>
+    <figure class="a2" data-reveal style="--d:.1s"><figcaption>Varanda</figcaption></figure>
+    <figure class="a3" data-reveal style="--d:.2s"><figcaption>Forno a lenha</figcaption></figure>
+  </div>
+</div></section>
+<section id="reservas" style="padding-top:0"><div class="wrap">
+  <div class="res" data-reveal>
+    <div><div class="kicker">Reservas</div><h2>Sua mesa está esperando</h2>
+      <p style="color:var(--muted)">Reserve em segundos pelo WhatsApp. Grupos acima de 10 pessoas e eventos: fale com a gente.</p>
+      <div class="actions"><button class="btn" data-demo-action="abriria o WhatsApp do restaurante com a reserva pré-preenchida">Reservar pelo WhatsApp</button>
+      <button class="btn ghost" data-demo-action="abriria a rota no Google Maps">Como chegar</button></div></div>
+    <ul class="hours" id="contato" aria-label="Horários"><li>Segunda<b>Fechado</b></li><li>Terça a sexta<b>11h30–15h · 19h–23h</b></li><li>Sábado<b>12h–16h · 19h–23h30</b></li><li>Domingo<b>12h–16h · 19h–22h</b></li></ul>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© Brasa &amp; Alecrim — restaurante fictício</span><span>Demonstração criada pela OrcasDesk</span></div></footer>
+<div class="od-bar" role="region" aria-label="Aviso de demonstração">
+  <span class="od-tag"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".55" stop-color="#3B82F6"/><stop offset="1" stop-color="#7C6CFF"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lgd)"/><path d="M11.5 27.5c3.6-.9 7.4-5.3 8.6-17.5 1.9 8.6 4.6 14.6 9.4 17.5z" fill="#fff"/><path d="M17.6 21.2c1.3.2 2.6-.4 3.3-1.6" stroke="#0B1324" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".55"/><path d="M7 31.2c4.3-2.6 8.7-2.6 13 0s8.7 2.6 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity=".75"/></svg><b>Demo</b><span class="od-hide-sm">Empresa fictícia · criada pela OrcasDesk</span></span>
+  <span class="od-sep od-hide-sm" aria-hidden="true"></span>
+  <a class="od-link" href="../demonstracoes.html">← Galeria</a>
+  <a class="od-cta" href="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20restaurante%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.48A11.3 11.3 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.72 1.46h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Quero um site assim</a>
+</div>
+<script src="../assets/js/demo-kit.js" defer></script>
+</body>
+</html>
