@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Exemplo de site para barbearia — Demonstração | OrcasDesk</title>
+  <meta name="description" content="Demonstração interativa de site para barbearia ou salão de beleza, criada pela OrcasDesk. Visual marcante, tabela de serviços, equipe e agendamento rápido para barbearias e salões. Empresa fictícia.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.orcasdesk.com.br/demos/barbearia.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.orcasdesk.com.br/demos/barbearia.html">
+  <meta name="theme-color" content="#0c0c0c">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="OrcasDesk">
+  <meta property="og:title" content="Exemplo de site para barbearia — Demonstração | OrcasDesk">
+  <meta property="og:description" content="Demonstração interativa de site para barbearia ou salão de beleza, criada pela OrcasDesk. Visual marcante, tabela de serviços, equipe e agendamento rápido para barbearias e salões. Empresa fictícia.">
+  <meta property="og:url" content="https://www.orcasdesk.com.br/demos/barbearia.html">
+  <meta property="og:image" content="https://www.orcasdesk.com.br/assets/img/demos/barbearia-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.orcasdesk.com.br/assets/img/demos/barbearia-og.jpg">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../assets/css/demo-kit.css">
+  <style>
+
+:root{--bg:#0c0c0c;--card:#151515;--gold:#cfa75b;--ink:#ece6da;--muted:#9a9488;--line:rgba(236,230,218,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Barlow",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}h1,h2,h3{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:.95;margin:0 0 .3em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.top{position:fixed;inset:0 0 auto;z-index:20;transition:background .3s}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font-family:"Bebas Neue";font-size:1.9rem;letter-spacing:.06em}.logo span{color:var(--gold)}
+.menu{display:flex;gap:30px;font-weight:500;text-transform:uppercase;font-size:.85rem;letter-spacing:.14em}.menu a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;background:var(--gold);color:#140f05;font:600 .85rem "Barlow";letter-spacing:.14em;text-transform:uppercase;border:0;cursor:pointer;clip-path:polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%);transition:filter .2s,transform .2s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-2px)}.btn.out{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);padding:8px 12px;font:inherit}
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 60px}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 70% 40%,rgba(207,167,91,.16),transparent 70%)}
+.hero .wrap{position:relative;width:100%}
+.hero h1{font-size:clamp(4.2rem,14vw,11rem)}.hero h1 span{display:block;color:transparent;-webkit-text-stroke:1.5px var(--gold)}
+.hero p{max-width:460px;color:var(--muted);font-size:1.1rem;margin:10px 0 30px}
+.pole{position:absolute;right:6%;top:18%;bottom:12%;width:54px;border-radius:30px;overflow:hidden;border:3px solid #2a2a2a;box-shadow:0 0 60px rgba(207,167,91,.2)}
+.pole::before{content:"";position:absolute;inset:-100% 0 0;background:repeating-linear-gradient(-45deg,#b3322f 0 18px,#ece6da 18px 36px,#24427a 36px 54px,#ece6da 54px 72px);animation:pole 3s linear infinite}
+@keyframes pole{to{transform:translateY(101.8px)}}
+section{padding:110px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:46px;flex-wrap:wrap}
+.head h2{font-size:clamp(3rem,7vw,5.2rem)}.head p{color:var(--muted);max-width:380px;margin:0}
+.k{color:var(--gold);font-size:.8rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600}
+.services{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.svc{padding:34px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:background .3s;position:relative}
+.svc:hover{background:var(--card)}.svc h3{font-size:2rem}.svc p{color:var(--muted);margin:0 0 18px}
+.svc .pr{font-family:"Bebas Neue";font-size:2.2rem;color:var(--gold)}.svc .t{color:var(--muted);font-size:.85rem;margin-left:8px}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.member{background:var(--card);padding:28px;position:relative;overflow:hidden}
+.av{width:100%;aspect-ratio:4/3;display:grid;place-items:center;font:3.6rem "Bebas Neue";color:var(--gold);margin-bottom:20px;background:repeating-linear-gradient(45deg,#1b1b1b 0 10px,#171717 10px 20px)}
+.member h3{font-size:1.8rem;margin:0}.member p{color:var(--muted);margin:0}
+.book{display:grid;grid-template-columns:1fr 1fr;gap:40px;background:var(--card);padding:56px;border:1px solid var(--line)}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 24px}
+.opts button{background:none;border:1px solid var(--line);color:var(--ink);padding:10px 16px;font:500 .95rem "Barlow";cursor:pointer;transition:.2s}
+.opts button[aria-pressed=true]{background:var(--gold);color:#140f05;border-color:var(--gold)}
+.sum{border-left:3px solid var(--gold);padding:14px 18px;background:#0f0f0f;margin-bottom:22px;color:var(--muted)}.sum b{color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:860px){.menu{position:fixed;inset:76px 0 auto;flex-direction:column;background:var(--bg);padding:24px;display:none}.menu.open{display:flex}.burger{display:block}.top .btn{display:none}
+.services,.team,.book{grid-template-columns:1fr}.book{padding:28px}.pole{width:26px;right:14px;top:auto;height:160px;bottom:30px}}
+@media(prefers-reduced-motion:reduce){.pole::before{animation:none}}
+
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.orcasdesk.com.br/demos/barbearia.html#webpage","url":"https://www.orcasdesk.com.br/demos/barbearia.html","name":"Exemplo de site para barbearia — Demonstração | OrcasDesk","description":"Demonstração interativa de site para barbearia ou salão de beleza, criada pela OrcasDesk. Visual marcante, tabela de serviços, equipe e agendamento rápido para barbearias e salões. Empresa fictícia.","inLanguage":"pt-BR","isPartOf":{"@id":"https://www.orcasdesk.com.br/#website"},"publisher":{"@id":"https://www.orcasdesk.com.br/#organizacao"},"primaryImageOfPage":"https://www.orcasdesk.com.br/assets/img/demos/barbearia-og.jpg","about":{"@type":"Thing","name":"Criação de site para barbearia ou salão de beleza"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.orcasdesk.com.br/"},{"@type":"ListItem","position":2,"name":"Demonstrações","item":"https://www.orcasdesk.com.br/demonstracoes.html"},{"@type":"ListItem","position":3,"name":"Barbearia","item":"https://www.orcasdesk.com.br/demos/barbearia.html"}]},{"@type":"WebSite","@id":"https://www.orcasdesk.com.br/#website","url":"https://www.orcasdesk.com.br/","name":"OrcasDesk"},{"@type":"Organization","@id":"https://www.orcasdesk.com.br/#organizacao","name":"OrcasDesk","url":"https://www.orcasdesk.com.br/","email":"orcasdesk@gmail.com"}]}</script>
+</head>
+<body class="od-demo" data-wa="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20barbearia%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio.">
+
+<header class="top" id="top"><div class="wrap">
+  <a class="logo" href="#">Navalha <span>Norte</span></a>
+  <nav class="menu" id="m" aria-label="Menu"><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a><a href="#agendar">Agendar</a></nav>
+  <a class="btn" href="#agendar">Agendar</a>
+  <button class="burger" data-menu-btn="#m" aria-expanded="false" aria-controls="m">Menu</button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+  <div class="k" data-reveal>Barber club · desde 2018</div>
+  <h1 data-reveal style="--d:.1s">Corte. Barba.<span>Atitude.</span></h1>
+  <p data-reveal style="--d:.2s">Ambiente de clube, café passado na hora e barbeiros que entendem o seu estilo. Agende em menos de um minuto.</p>
+  <div data-reveal style="--d:.3s;display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="#agendar">Agendar horário</a><a class="btn out" href="#servicos">Ver serviços</a></div>
+</div><div class="pole" aria-hidden="true"></div></section>
+<section id="servicos"><div class="wrap">
+  <div class="head"><div><div class="k">Serviços</div><h2>Tabela da casa</h2></div><p>Preços de exemplo para esta demonstração. Pagamento em Pix, cartão ou dinheiro.</p></div>
+  <div class="services"><article class="svc" data-reveal style="--d:0.00s"><h3>Corte</h3><p>Tesoura ou máquina, lavagem e finalização.</p><span class="pr">R$ 45</span><span class="t">40 min</span></article><article class="svc" data-reveal style="--d:0.05s"><h3>Barba</h3><p>Toalha quente, navalha e balm hidratante.</p><span class="pr">R$ 35</span><span class="t">30 min</span></article><article class="svc" data-reveal style="--d:0.10s"><h3>Corte + Barba</h3><p>O combo completo com acabamento detalhado.</p><span class="pr">R$ 70</span><span class="t">70 min</span></article><article class="svc" data-reveal style="--d:0.15s"><h3>Degradê</h3><p>Fade baixo, médio ou alto com precisão.</p><span class="pr">R$ 50</span><span class="t">45 min</span></article><article class="svc" data-reveal style="--d:0.20s"><h3>Pigmentação</h3><p>Correção de falhas na barba ou no cabelo.</p><span class="pr">R$ 30</span><span class="t">20 min</span></article><article class="svc" data-reveal style="--d:0.25s"><h3>Sobrancelha</h3><p>Limpeza e alinhamento na navalha.</p><span class="pr">R$ 15</span><span class="t">10 min</span></article></div>
+</div></section>
+<section id="equipe" style="padding-top:0"><div class="wrap">
+  <div class="head"><div><div class="k">Equipe</div><h2>Mãos de confiança</h2></div></div>
+  <div class="team"><div class="member" data-reveal style="--d:0.00s"><div class="av" aria-hidden="true">RB</div><h3>Rafael B.</h3><p>Degradês e cortes clássicos</p></div><div class="member" data-reveal style="--d:0.08s"><div class="av" aria-hidden="true">TM</div><h3>Tiago M.</h3><p>Barba e navalha</p></div><div class="member" data-reveal style="--d:0.16s"><div class="av" aria-hidden="true">LS</div><h3>Lucas S.</h3><p>Cortes texturizados</p></div></div>
+</div></section>
+<section id="agendar" style="padding-top:0"><div class="wrap">
+  <div class="book" data-reveal>
+    <div><div class="k">Agendamento</div><h2 style="font-size:clamp(3rem,6vw,4.4rem)">Reserve sua cadeira</h2>
+      <p style="color:var(--muted)">Ter–Sex 9h às 20h · Sáb 8h às 18h<br>Av. Central, 900 — endereço fictício</p></div>
+    <div>
+      <div class="k" style="font-size:.72rem">1. Serviço</div><div class="opts" id="so"><button type="button" aria-pressed="true" data-s="Corte">Corte</button><button type="button" aria-pressed="false" data-s="Barba">Barba</button><button type="button" aria-pressed="false" data-s="Corte + Barba">Corte + Barba</button><button type="button" aria-pressed="false" data-s="Degradê">Degradê</button></div>
+      <div class="k" style="font-size:.72rem">2. Quando</div><div class="opts" id="do"><button type="button" aria-pressed="true" data-d="Hoje">Hoje</button><button type="button" aria-pressed="false" data-d="Amanhã">Amanhã</button><button type="button" aria-pressed="false" data-d="Sábado">Sábado</button><button type="button" aria-pressed="false" data-d="Outro dia">Outro dia</button></div>
+      <p class="sum" aria-live="polite">Você escolheu <b id="ss">Corte</b> para <b id="sd">Hoje</b>.</p>
+      <button class="btn" data-demo-action="abriria o WhatsApp da barbearia com o serviço e o dia já escritos">Confirmar pelo WhatsApp</button>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© Navalha Norte — barbearia fictícia</span><span>Demonstração criada pela OrcasDesk</span></div></footer>
+<div class="od-bar" role="region" aria-label="Aviso de demonstração">
+  <span class="od-tag"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".55" stop-color="#3B82F6"/><stop offset="1" stop-color="#7C6CFF"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lgd)"/><path d="M11.5 27.5c3.6-.9 7.4-5.3 8.6-17.5 1.9 8.6 4.6 14.6 9.4 17.5z" fill="#fff"/><path d="M17.6 21.2c1.3.2 2.6-.4 3.3-1.6" stroke="#0B1324" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".55"/><path d="M7 31.2c4.3-2.6 8.7-2.6 13 0s8.7 2.6 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity=".75"/></svg><b>Demo</b><span class="od-hide-sm">Empresa fictícia · criada pela OrcasDesk</span></span>
+  <span class="od-sep od-hide-sm" aria-hidden="true"></span>
+  <a class="od-link" href="../demonstracoes.html">← Galeria</a>
+  <a class="od-cta" href="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20barbearia%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.48A11.3 11.3 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.72 1.46h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Quero um site assim</a>
+</div>
+<script src="../assets/js/demo-kit.js" defer></script><script>
+(function(){function pick(id,attr,out){var g=document.getElementById(id);g.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;g.querySelectorAll("button").forEach(function(x){x.setAttribute("aria-pressed",String(x===b))});document.getElementById(out).textContent=b.getAttribute(attr)})}
+pick("so","data-s","ss");pick("do","data-d","sd");
+var t=document.getElementById("top");addEventListener("scroll",function(){t.style.background=scrollY>20?"rgba(12,12,12,.9)":"transparent"},{passive:true})})();</script>
+</body>
+</html>
