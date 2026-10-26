@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Exemplo de site para serviços locais — Demonstração | OrcasDesk</title>
+  <meta name="description" content="Demonstração interativa de site para prestador de serviços local, criada pela OrcasDesk. Para eletricistas, encanadores e prestadores: serviços, bairros atendidos e pedido de orçamento. Empresa fictícia.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.orcasdesk.com.br/demos/servicos-locais.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.orcasdesk.com.br/demos/servicos-locais.html">
+  <meta name="theme-color" content="#fffaf0">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="OrcasDesk">
+  <meta property="og:title" content="Exemplo de site para serviços locais — Demonstração | OrcasDesk">
+  <meta property="og:description" content="Demonstração interativa de site para prestador de serviços local, criada pela OrcasDesk. Para eletricistas, encanadores e prestadores: serviços, bairros atendidos e pedido de orçamento. Empresa fictícia.">
+  <meta property="og:url" content="https://www.orcasdesk.com.br/demos/servicos-locais.html">
+  <meta property="og:image" content="https://www.orcasdesk.com.br/assets/img/demos/servicos-locais-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.orcasdesk.com.br/assets/img/demos/servicos-locais-og.jpg">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/demo-kit.css">
+  <style>
+
+:root{--bg:#fffaf0;--yellow:#ffc533;--blue:#1d3a8a;--blue2:#e8eefc;--ink:#1a1f2e;--muted:#5f6577;--line:#efe5cf}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.65 "Rubik",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}h1,h2,h3{font-weight:700;line-height:1.08;margin:0 0 .45em;letter-spacing:-.02em}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.emerg{background:var(--blue);color:#fff;font-size:.9rem}.emerg .wrap{display:flex;justify-content:space-between;gap:12px;padding:9px 24px;flex-wrap:wrap}.emerg b{color:var(--yellow)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.25rem}.logo i{width:38px;height:38px;border-radius:10px;background:var(--yellow);display:grid;place-items:center;transform:rotate(-6deg)}
+.menu{display:flex;gap:26px;font-weight:500}.menu a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:12px;background:var(--yellow);color:var(--ink);font:600 1rem "Rubik";border:0;cursor:pointer;box-shadow:0 4px 0 #d79f12;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 #d79f12}.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #d79f12}.btn.blue{background:var(--blue);color:#fff;box-shadow:0 4px 0 #0f2360}
+.burger{display:none;background:#fff;border:2px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit}
+.hero{padding:50px 0 90px}.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem)}.hero h1 mark{background:linear-gradient(transparent 58%,var(--yellow) 58%);color:inherit;padding:0 4px}
+.hero p{color:var(--muted);font-size:1.12rem;max-width:480px}.ticks{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:8px}.ticks li::before{content:"✔";color:var(--blue);margin-right:10px;font-weight:700}
+.tools{position:relative;aspect-ratio:1;max-width:440px;width:100%;margin:auto}
+.tools .bg{position:absolute;inset:6%;background:var(--yellow);border-radius:32px;transform:rotate(-5deg)}
+.tools .card{position:absolute;inset:10%;background:#fff;border-radius:28px;box-shadow:0 30px 60px -30px rgba(29,58,138,.4);display:grid;grid-template-columns:1fr 1fr;padding:12%;gap:14px}
+.tools .t{background:var(--blue2);border-radius:18px;display:grid;place-items:center;color:var(--blue);animation:wig 4s ease-in-out infinite}.tools .t:nth-child(2){animation-delay:.5s}.tools .t:nth-child(3){animation-delay:1s}.tools .t:nth-child(4){animation-delay:1.5s}
+.tools svg{width:46%}@keyframes wig{0%,80%,100%{transform:none}85%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}95%{transform:rotate(-4deg)}}
+section{padding:90px 0}h2{font-size:clamp(2rem,4.4vw,3rem)}.center{text-align:center;max-width:620px;margin:0 auto 44px}.center p{color:var(--muted)}
+.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.svc{background:#fff;border:2px solid var(--line);border-radius:20px;padding:24px;transition:border-color .2s,transform .2s}.svc:hover{border-color:var(--yellow);transform:translateY(-4px)}
+.svc .ic{width:50px;height:50px;border-radius:14px;background:var(--blue2);color:var(--blue);display:grid;place-items:center;margin-bottom:14px}.svc .ic svg{width:26px}
+.svc h3{font-size:1.15rem;margin-bottom:6px}.svc ul{list-style:none;padding:0;margin:0;color:var(--muted);font-size:.93rem;display:grid;gap:3px}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.how div{background:var(--blue);color:#fff;border-radius:22px;padding:30px;position:relative}
+.how b{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--yellow);color:var(--ink);font-size:1.2rem;margin-bottom:16px}.how p{color:#c9d4f2;margin:0}
+.areas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.areas span{background:#fff;border:2px solid var(--line);padding:10px 18px;border-radius:999px;font-weight:500}
+.cta{background:var(--yellow);border-radius:28px;padding:50px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}.cta h2{margin:0}
+footer{padding:40px 0;color:var(--muted);font-size:.9rem}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:2px solid var(--line);padding-top:30px}
+@media(max-width:900px){.menu{position:absolute;top:118px;left:0;right:0;flex-direction:column;background:var(--bg);padding:24px;display:none;z-index:20;border-bottom:2px solid var(--line)}.menu.open{display:flex}.burger{display:block}.top .btn{display:none}
+.hero .wrap{grid-template-columns:1fr}.svcs{grid-template-columns:1fr 1fr}.how{grid-template-columns:1fr}.tools{max-width:320px}.cta{padding:30px}}
+@media(max-width:520px){.svcs{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.orcasdesk.com.br/demos/servicos-locais.html#webpage","url":"https://www.orcasdesk.com.br/demos/servicos-locais.html","name":"Exemplo de site para serviços locais — Demonstração | OrcasDesk","description":"Demonstração interativa de site para prestador de serviços local, criada pela OrcasDesk. Para eletricistas, encanadores e prestadores: serviços, bairros atendidos e pedido de orçamento. Empresa fictícia.","inLanguage":"pt-BR","isPartOf":{"@id":"https://www.orcasdesk.com.br/#website"},"publisher":{"@id":"https://www.orcasdesk.com.br/#organizacao"},"primaryImageOfPage":"https://www.orcasdesk.com.br/assets/img/demos/servicos-locais-og.jpg","about":{"@type":"Thing","name":"Criação de site para prestador de serviços local"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.orcasdesk.com.br/"},{"@type":"ListItem","position":2,"name":"Demonstrações","item":"https://www.orcasdesk.com.br/demonstracoes.html"},{"@type":"ListItem","position":3,"name":"Serviços locais","item":"https://www.orcasdesk.com.br/demos/servicos-locais.html"}]},{"@type":"WebSite","@id":"https://www.orcasdesk.com.br/#website","url":"https://www.orcasdesk.com.br/","name":"OrcasDesk"},{"@type":"Organization","@id":"https://www.orcasdesk.com.br/#organizacao","name":"OrcasDesk","url":"https://www.orcasdesk.com.br/","email":"orcasdesk@gmail.com"}]}</script>
+</head>
+<body class="od-demo" data-wa="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20servi%C3%A7os%20locais%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio.">
+
+<div class="emerg"><div class="wrap"><span><b>Urgência?</b> Atendimento no mesmo dia, conforme disponibilidade</span><span>Seg a sáb · 7h às 19h</span></div></div>
+<header class="top"><div class="wrap">
+  <a class="logo" href="#"><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 14l-8 8-2.6-2.4a4 4 0 0 0-5-5L4 12l8-8z" transform="scale(.9) translate(1 1)"/></svg></i>Mãos à Obra</a>
+  <nav class="menu" id="m" aria-label="Menu"><a href="#servicos">Serviços</a><a href="#como">Como funciona</a><a href="#bairros">Bairros</a></nav>
+  <button class="btn" data-demo-action="abriria o WhatsApp do prestador para pedir orçamento">Pedir orçamento</button>
+  <button class="burger" data-menu-btn="#m" aria-expanded="false" aria-controls="m">Menu</button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+  <div><h1 data-reveal>Aquele conserto que você vem adiando? <mark>A gente resolve.</mark></h1>
+    <p data-reveal style="--d:.1s">Elétrica, hidráulica, pintura e pequenos reparos para casas, apartamentos e comércios.</p>
+    <ul class="ticks" data-reveal style="--d:.2s"><li>Orçamento sem compromisso</li><li>Pontualidade e limpeza após o serviço</li><li>Pagamento em Pix ou cartão</li></ul>
+    <div data-reveal style="--d:.3s;display:flex;gap:12px;flex-wrap:wrap"><button class="btn" data-demo-action="abriria o WhatsApp do prestador para pedir orçamento">Pedir orçamento</button><a class="btn blue" href="#servicos">Ver serviços</a></div></div>
+  <div class="tools" aria-hidden="true"><div class="bg"></div><div class="card"><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 14l-8 8-2.6-2.4a4 4 0 0 0-5-5L4 12l8-8z" transform="scale(.9) translate(1 1)"/></svg></div><div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 3 9 12M7 14c-2 0-3 1.5-3 3.5S3 21 3 21s4 0 5.5-1.5S10 16 10 16z"/><path d="m14 7 3 3"/></svg></div></div></div>
+</div></section>
+<section id="servicos" style="background:#fff;border-block:2px solid var(--line)"><div class="wrap"><div class="center"><h2 data-reveal>Serviços</h2><p>Se não estiver na lista, pergunte. Provavelmente fazemos.</p></div><div class="svcs"><article class="svc" data-reveal style="--d:0.00s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Elétrica</h3><ul><li>Tomadas e interruptores</li><li>Chuveiros</li><li>Quadros de luz</li></ul></article><article class="svc" data-reveal style="--d:0.06s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>Hidráulica</h3><ul><li>Vazamentos</li><li>Torneiras e registros</li><li>Desentupimento</li></ul></article><article class="svc" data-reveal style="--d:0.12s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 14l-8 8-2.6-2.4a4 4 0 0 0-5-5L4 12l8-8z" transform="scale(.9) translate(1 1)"/></svg></div><h3>Pequenos reparos</h3><ul><li>Montagem de móveis</li><li>Prateleiras e cortinas</li><li>Portas e fechaduras</li></ul></article><article class="svc" data-reveal style="--d:0.18s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 3 9 12M7 14c-2 0-3 1.5-3 3.5S3 21 3 21s4 0 5.5-1.5S10 16 10 16z"/><path d="m14 7 3 3"/></svg></div><h3>Pintura</h3><ul><li>Paredes e tetos</li><li>Retoques</li><li>Portões</li></ul></article></div></div></section>
+<section id="como"><div class="wrap"><div class="center"><h2 data-reveal>Como funciona</h2></div><div class="how">
+  <div data-reveal><b>1</b><h3>Mande uma foto</h3><p>Envie pelo WhatsApp o que precisa ser feito.</p></div>
+  <div data-reveal style="--d:.08s"><b>2</b><h3>Receba o orçamento</h3><p>Valor e prazo combinados antes de começar.</p></div>
+  <div data-reveal style="--d:.16s"><b>3</b><h3>Serviço feito</h3><p>Chegamos no horário e deixamos tudo limpo.</p></div>
+</div></div></section>
+<section id="bairros" style="padding-top:0"><div class="wrap"><div class="center"><h2 data-reveal>Bairros atendidos</h2><p>Bairros fictícios para esta demonstração.</p></div><div class="areas"><span>Centro</span><span>Bela Vista</span><span>Jardim América</span><span>Vila Nova</span><span>São José</span><span>Parque das Flores</span><span>Boa Esperança</span><span>Cidade Alta</span></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="cta" data-reveal><h2>Precisa de um reparo?</h2><button class="btn blue" data-demo-action="abriria o WhatsApp do prestador para pedir orçamento">Chamar no WhatsApp</button></div></div></section>
+</main>
+<footer><div class="wrap"><span>© Mãos à Obra Reparos — empresa fictícia</span><span>Demonstração criada pela OrcasDesk</span></div></footer>
+<div class="od-bar" role="region" aria-label="Aviso de demonstração">
+  <span class="od-tag"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".55" stop-color="#3B82F6"/><stop offset="1" stop-color="#7C6CFF"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lgd)"/><path d="M11.5 27.5c3.6-.9 7.4-5.3 8.6-17.5 1.9 8.6 4.6 14.6 9.4 17.5z" fill="#fff"/><path d="M17.6 21.2c1.3.2 2.6-.4 3.3-1.6" stroke="#0B1324" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".55"/><path d="M7 31.2c4.3-2.6 8.7-2.6 13 0s8.7 2.6 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity=".75"/></svg><b>Demo</b><span class="od-hide-sm">Empresa fictícia · criada pela OrcasDesk</span></span>
+  <span class="od-sep od-hide-sm" aria-hidden="true"></span>
+  <a class="od-link" href="../demonstracoes.html">← Galeria</a>
+  <a class="od-cta" href="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20servi%C3%A7os%20locais%20e%20quero%20um%20site%20assim%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.48A11.3 11.3 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.72 1.46h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Quero um site assim</a>
+</div>
+<script src="../assets/js/demo-kit.js" defer></script>
+</body>
+</html>
