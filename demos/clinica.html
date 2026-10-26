@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Exemplo de site para clínica odontológica — Demonstração | OrcasDesk</title>
+  <meta name="description" content="Demonstração interativa de site para clínica, dentista ou consultório, criada pela OrcasDesk. Site claro e acolhedor para consultórios, com tratamentos, equipe, dúvidas frequentes e agendamento. Empresa fictícia.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://www.orcasdesk.com.br/demos/clinica.html">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.orcasdesk.com.br/demos/clinica.html">
+  <meta name="theme-color" content="#f5faf9">
+  <meta name="format-detection" content="telephone=no">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="OrcasDesk">
+  <meta property="og:title" content="Exemplo de site para clínica odontológica — Demonstração | OrcasDesk">
+  <meta property="og:description" content="Demonstração interativa de site para clínica, dentista ou consultório, criada pela OrcasDesk. Site claro e acolhedor para consultórios, com tratamentos, equipe, dúvidas frequentes e agendamento. Empresa fictícia.">
+  <meta property="og:url" content="https://www.orcasdesk.com.br/demos/clinica.html">
+  <meta property="og:image" content="https://www.orcasdesk.com.br/assets/img/demos/clinica-og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.orcasdesk.com.br/assets/img/demos/clinica-og.jpg">
+  <link rel="icon" href="../favicon.ico" sizes="32x32">
+  <link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="../assets/css/demo-kit.css">
+  <style>
+
+:root{--bg:#f5faf9;--white:#fff;--teal:#0e8c84;--teal2:#d9f0ed;--navy:#12324a;--muted:#5b7183;--line:#dfe9ea}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--navy);font:400 16.5px/1.7 "Plus Jakarta Sans",system-ui,sans-serif}
+a{color:inherit;text-decoration:none}h1,h2,h3{line-height:1.12;margin:0 0 .5em;letter-spacing:-.02em;font-weight:700}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.top{position:sticky;top:0;z-index:20;background:rgba(245,250,249,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem}.logo i{width:34px;height:34px;border-radius:10px;background:var(--teal);display:grid;place-items:center}
+.menu{display:flex;gap:26px;color:var(--muted);font-weight:500;font-size:.95rem}.menu a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:12px;background:var(--teal);color:#fff;font:600 .95rem "Plus Jakarta Sans";border:0;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px var(--teal)}.btn.soft{background:var(--teal2);color:var(--teal)}
+.burger{display:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit;color:var(--navy)}
+.hero{padding:70px 0 90px}.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:50px;align-items:center}
+.pill{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.85rem;color:var(--teal);font-weight:600;margin-bottom:20px}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4rem)}.hero h1 span{color:var(--teal)}
+.hero p{color:var(--muted);font-size:1.1rem;max-width:500px;margin-bottom:28px}
+.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:var(--muted);font-size:.9rem}.trust span{display:flex;align-items:center;gap:8px}.trust svg{width:18px;color:var(--teal)}
+.art{position:relative;aspect-ratio:1;max-width:470px;margin:auto;width:100%}
+.blob{position:absolute;inset:0;background:linear-gradient(140deg,#bfe7e2,#e6f6f3 60%,#fff);border-radius:42% 58% 63% 37%/45% 41% 59% 55%;animation:morph 12s ease-in-out infinite}
+@keyframes morph{50%{border-radius:58% 42% 36% 64%/55% 60% 40% 45%}}
+.art svg{position:absolute;inset:18%;width:64%;height:64%;filter:drop-shadow(0 20px 30px rgba(14,140,132,.25));animation:bob 6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.float{position:absolute;background:#fff;border-radius:14px;padding:12px 16px;box-shadow:0 18px 40px -16px rgba(18,50,74,.3);font-size:.85rem;font-weight:600;display:flex;gap:10px;align-items:center}
+.float i{width:30px;height:30px;border-radius:9px;background:var(--teal2);display:grid;place-items:center;color:var(--teal);font-style:normal}
+.f1{left:-4%;top:18%;animation:bob 7s ease-in-out infinite}.f2{right:-2%;bottom:16%;animation:bob 8s ease-in-out infinite reverse}
+section{padding:96px 0}.head{max-width:620px;margin-bottom:44px}.head p{color:var(--muted)}.k{color:var(--teal);font-weight:700;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(2rem,4vw,2.8rem)}
+.treat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgba(18,50,74,.35)}
+.card .ic{width:48px;height:48px;border-radius:14px;background:var(--teal2);color:var(--teal);display:grid;place-items:center;margin-bottom:18px}.card .ic svg{width:24px}
+.card h3{font-size:1.15rem}.card p{color:var(--muted);margin:0;font-size:.95rem}
+.team{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.doc{display:flex;gap:20px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}
+.doc .ph{width:96px;height:96px;border-radius:18px;flex:none;background:linear-gradient(140deg,var(--teal),#53c0b6);display:grid;place-items:center;color:#fff;font-weight:800;font-size:1.6rem}
+.doc h3{margin:0;font-size:1.1rem}.doc p{margin:0;color:var(--muted);font-size:.93rem}
+.faq{max-width:780px;display:grid;gap:10px}
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:0 22px}
+summary{cursor:pointer;padding:18px 0;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--teal);font-size:1.4rem;line-height:1;transition:transform .3s}details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin:0 0 18px}
+.cta{background:var(--navy);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center}
+.cta p{color:#b8c9d6}.cta ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;color:#d7e3ec}
+footer{padding:40px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:880px){.menu{position:fixed;inset:74px 0 auto;flex-direction:column;background:var(--bg);padding:24px;display:none;border-bottom:1px solid var(--line)}.menu.open{display:flex}.burger{display:block}.top .btn{display:none}
+.hero .wrap,.cta{grid-template-columns:1fr}.treat{grid-template-columns:1fr 1fr}.team{grid-template-columns:1fr}.cta{padding:30px}.art{max-width:340px}}
+@media(max-width:560px){.treat{grid-template-columns:1fr}.f1,.f2{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.orcasdesk.com.br/demos/clinica.html#webpage","url":"https://www.orcasdesk.com.br/demos/clinica.html","name":"Exemplo de site para clínica odontológica — Demonstração | OrcasDesk","description":"Demonstração interativa de site para clínica, dentista ou consultório, criada pela OrcasDesk. Site claro e acolhedor para consultórios, com tratamentos, equipe, dúvidas frequentes e agendamento. Empresa fictícia.","inLanguage":"pt-BR","isPartOf":{"@id":"https://www.orcasdesk.com.br/#website"},"publisher":{"@id":"https://www.orcasdesk.com.br/#organizacao"},"primaryImageOfPage":"https://www.orcasdesk.com.br/assets/img/demos/clinica-og.jpg","about":{"@type":"Thing","name":"Criação de site para clínica, dentista ou consultório"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.orcasdesk.com.br/"},{"@type":"ListItem","position":2,"name":"Demonstrações","item":"https://www.orcasdesk.com.br/demonstracoes.html"},{"@type":"ListItem","position":3,"name":"Clínica odontológica","item":"https://www.orcasdesk.com.br/demos/clinica.html"}]},{"@type":"WebSite","@id":"https://www.orcasdesk.com.br/#website","url":"https://www.orcasdesk.com.br/","name":"OrcasDesk"},{"@type":"Organization","@id":"https://www.orcasdesk.com.br/#organizacao","name":"OrcasDesk","url":"https://www.orcasdesk.com.br/","email":"orcasdesk@gmail.com"}]}</script>
+</head>
+<body class="od-demo" data-wa="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20cl%C3%ADnica%20e%20quero%20um%20site%20assim%20para%20o%20meu%20consult%C3%B3rio.">
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="#"><i aria-hidden="true"><svg width="20" viewBox="0 0 24 24" fill="#fff"><path fill="#fff" d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7 .5 3 1 6.5 3 6.5s2-4 4-4 2 4 4 4 2.5-3.5 3-6.5c.5-2.5 2-4 2-7C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3Z"/></svg></i>Sorriso Pleno</a>
+  <nav class="menu" id="m" aria-label="Menu"><a href="#tratamentos">Tratamentos</a><a href="#equipe">Equipe</a><a href="#duvidas">Dúvidas</a><a href="#agendar">Contato</a></nav>
+  <button class="btn" data-demo-action="abriria o WhatsApp da clínica para marcar uma avaliação">Agendar avaliação</button>
+  <button class="burger" data-menu-btn="#m" aria-expanded="false" aria-controls="m">Menu</button>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="pill" data-reveal>Odontologia para toda a família</div>
+    <h1 data-reveal style="--d:.08s">Cuidado de verdade para o seu <span>sorriso.</span></h1>
+    <p data-reveal style="--d:.16s">Atendimento humanizado, horários estendidos e um plano de tratamento explicado com calma, sem pressa e sem surpresas.</p>
+    <div data-reveal style="--d:.24s;display:flex;gap:12px;flex-wrap:wrap"><button class="btn" data-demo-action="abriria o WhatsApp da clínica para marcar uma avaliação">Agendar avaliação</button><a class="btn soft" href="#tratamentos">Conhecer tratamentos</a></div>
+    <div class="trust"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Hora marcada</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Seg a sáb</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Acessibilidade</span></div>
+  </div>
+  <div class="art" aria-hidden="true"><div class="blob"></div>
+    <svg viewBox="0 0 24 24"><path fill="#fff" stroke="#0e8c84" stroke-width=".7" d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7 .5 3 1 6.5 3 6.5s2-4 4-4 2 4 4 4 2.5-3.5 3-6.5c.5-2.5 2-4 2-7C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3Z"/><path d="M8 6.5c-1 .3-1.8 1.2-2 2.4" stroke="#bfe7e2" stroke-width=".9" stroke-linecap="round" fill="none"/></svg>
+    <div class="float f1"><i>✓</i>Avaliação completa</div><div class="float f2"><i>☾</i>Horário até 20h</div>
+  </div>
+</div></section>
+<section id="tratamentos" style="background:#fff;border-block:1px solid var(--line)"><div class="wrap">
+  <div class="head"><div class="k">Tratamentos</div><h2>Tudo o que seu sorriso precisa, em um só lugar</h2><p>Especialidades integradas para que você não precise ir de consultório em consultório.</p></div>
+  <div class="treat"><article class="card" data-reveal style="--d:0.00s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4.5 2 7 .5 3 1 6.5 3 6.5s2-4 4-4 2 4 4 4 2.5-3.5 3-6.5c.5-2.5 2-4 2-7C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3Z"/></svg></div><h3>Clínico geral</h3><p>Avaliação, limpeza, restaurações e prevenção para toda a família.</p></article><article class="card" data-reveal style="--d:0.05s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18M6 9v6M10 9v6M14 9v6M18 9v6"/></svg></div><h3>Ortodontia</h3><p>Aparelhos fixos e alinhadores, com acompanhamento de perto.</p></article><article class="card" data-reveal style="--d:0.10s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-1 5H9zM10 8v13M14 8v13M8 12h8M8 16h8"/></svg></div><h3>Implantes</h3><p>Planejamento cuidadoso para recuperar função e estética.</p></article><article class="card" data-reveal style="--d:0.15s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Clareamento</h3><p>Técnicas de consultório e caseiras com orientação profissional.</p></article><article class="card" data-reveal style="--d:0.20s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 14c1 1.3 2.2 2 3.5 2s2.5-.7 3.5-2M9 9.5h.01M15 9.5h.01"/></svg></div><h3>Odontopediatria</h3><p>Atendimento lúdico e acolhedor para os pequenos.</p></article><article class="card" data-reveal style="--d:0.25s"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M8 7l4-4 4 4M7 14c2 2 8 2 10 0"/></svg></div><h3>Endodontia</h3><p>Tratamento de canal com conforto e tecnologia.</p></article></div>
+</div></section>
+<section id="equipe"><div class="wrap">
+  <div class="head"><div class="k">Equipe</div><h2>Quem cuida de você</h2></div>
+  <div class="team">
+    <div class="doc" data-reveal><div class="ph" aria-hidden="true">HP</div><div><h3>Dra. Helena Prado</h3><p>Cirurgiã-dentista · Ortodontia</p></div></div>
+    <div class="doc" data-reveal style="--d:.1s"><div class="ph" aria-hidden="true">RA</div><div><h3>Dr. Rodrigo Alves</h3><p>Cirurgião-dentista · Implantodontia</p></div></div>
+  </div>
+</div></section>
+<section id="duvidas" style="padding-top:0"><div class="wrap">
+  <div class="head"><div class="k">Dúvidas frequentes</div><h2>Perguntas que sempre recebemos</h2></div>
+  <div class="faq"><details data-reveal><summary>Vocês atendem convênios?</summary><p>Sim, trabalhamos com alguns convênios. Consulte a lista atualizada pelo WhatsApp antes de agendar.</p></details><details data-reveal><summary>Como funciona a primeira consulta?</summary><p>Fazemos uma avaliação completa, conversamos sobre suas necessidades e apresentamos um plano de tratamento com orçamento detalhado.</p></details><details data-reveal><summary>Atendem crianças?</summary><p>Sim. Temos atendimento de odontopediatria com uma abordagem acolhedora para crianças.</p></details><details data-reveal><summary>Quais são as formas de pagamento?</summary><p>Pix, cartões de débito e crédito, com opções de parcelamento conforme o tratamento.</p></details></div>
+</div></section>
+<section id="agendar" style="padding-top:0"><div class="wrap">
+  <div class="cta" data-reveal><div><h2>Agende sua avaliação</h2><p>Responderemos pelo WhatsApp com os horários disponíveis.</p><button class="btn" data-demo-action="abriria o WhatsApp da clínica para marcar uma avaliação">Agendar pelo WhatsApp</button></div>
+  <ul><li>Seg a sex · 8h às 20h</li><li>Sábado · 8h às 12h</li><li>Rua das Acácias, 55 — endereço fictício</li></ul></div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© Sorriso Pleno — clínica fictícia</span><span>Demonstração criada pela OrcasDesk</span></div></footer>
+<div class="od-bar" role="region" aria-label="Aviso de demonstração">
+  <span class="od-tag"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset=".55" stop-color="#3B82F6"/><stop offset="1" stop-color="#7C6CFF"/></linearGradient></defs><rect width="40" height="40" rx="11" fill="url(#lgd)"/><path d="M11.5 27.5c3.6-.9 7.4-5.3 8.6-17.5 1.9 8.6 4.6 14.6 9.4 17.5z" fill="#fff"/><path d="M17.6 21.2c1.3.2 2.6-.4 3.3-1.6" stroke="#0B1324" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".55"/><path d="M7 31.2c4.3-2.6 8.7-2.6 13 0s8.7 2.6 13 0" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity=".75"/></svg><b>Demo</b><span class="od-hide-sm">Empresa fictícia · criada pela OrcasDesk</span></span>
+  <span class="od-sep od-hide-sm" aria-hidden="true"></span>
+  <a class="od-link" href="../demonstracoes.html">← Galeria</a>
+  <a class="od-cta" href="https://wa.me/5555996689852?text=Ol%C3%A1%21%20Vi%20a%20demonstra%C3%A7%C3%A3o%20de%20cl%C3%ADnica%20e%20quero%20um%20site%20assim%20para%20o%20meu%20consult%C3%B3rio." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.44 9.45-9.44 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.2-4.24 9.43-9.45 9.43m8.04-17.48A11.3 11.3 0 0 0 12.05.7C5.8.7.7 5.79.7 12.05c0 2 .52 3.95 1.52 5.67L.6 23.3l5.72-1.5a11.3 11.3 0 0 0 5.72 1.46h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.03"/></svg>Quero um site assim</a>
+</div>
+<script src="../assets/js/demo-kit.js" defer></script>
+</body>
+</html>
